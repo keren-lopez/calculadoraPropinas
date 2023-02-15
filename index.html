@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="design/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="app.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <!-- titulo -->
+  <header>
+    <img src="../images/logo.svg" alt="Logo">
+  </header>
+
+
+  <main class="contenedor-principal">
+
+    <!-- Seccion Izquierda-->
+
+
+    <!-- Parte superior Bill-->
+
+    <div id="principal-izquierda">
+      <div id="principal-left-superior">
+        <p> Bill </p>
+        <div id="bill">
+          <img src="images/icon-dollar.svg" alt="icon dollar">
+          <input class="input" type="number" name="bill" placeholder="0" value="">
+        </div>
+      </div>
+
+
+      <!-- Seccion de botones -->
+
+      <div id="principal-left-botones">
+        <p>Select Tip %</p>
+        <div class="porcentajes">
+          <button class="button" value="5">5%</button>
+          <button class="button" value="10">10%</button>
+          <button class="button" value="15">15%</button>
+          <button class="button" value="25">25%</button>
+          <button class="button" value="50">50%</button>
+          <input class="input custom" type="number" placeholder="Custom" value="">
+        </div>
+      </div>
+
+      <!-- Seccion numero de personas -->
+
+      <div id="principal-personas">
+
+        <div id="people-information">
+          <p>Number of People</p>
+          <p class="if-zero-number"></p>
+        </div>
+     
+
+        <div id="number-people">
+        <img src="images/icon-person.svg" alt="icon person">
+        <input class="input" type="number" name="" placeholder="0" value="">
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+    <!-- Seccion parte derecha -->
+    <div id="principal-derecha">
+
+      <!-- propina por persona -->
+      <div id="principal-right-superior">
+        <div>
+          <p class="tip-person">Tip Amount</p>
+          <p class="person">/ person</p>
+        </div>
+        <div class="tip-total">
+          <div class="dollar"></div>
+          <span>$</span><span id="result-tip">0.00</span>
+        </div>
+      </div>
+
+      <!-- propina total -->
+
+      <div id="principal-right-total">
+        <div>
+          <p class="tip-person">Total</p>
+          <p class="person">/ person</p>
+        </div>
+        <div class="tip-total">
+          <div class="dollar"></div>
+          <span>$</span><span id="result-total">0.00</span>
+        </div>
+      </div>
+      
+      <button id="button-reset" disabled>Reset</button>
+
+
+    </div>
+
+
+  </main>
+
+
+  </div>
+</body>
+
+</html>

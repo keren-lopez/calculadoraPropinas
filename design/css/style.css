@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+
+/* Declarando variables */
+:root {
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLIghtGrayishCyan: hsl(189, 41%, 97%);
+    --StrongCyan: hsl(172, 67%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --fontSize: 24px;
+}
+
+/* Ajustes Principales */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightGrayishCyan);
+    gap: 4rem;
+}
+
+p {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+
+.contenedor-principal {
+    background-color: var(--White);
+    border-radius: 20px;
+    max-width: 1000px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contenedor-principal #principal-izquierda {
+    color: gray;
+
+}
+
+.contenedor-principal#principal-izquierda,
+.contenedor-principal #principal-derecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-principal #principal-izquierda {
+    gap: 2rem;
+}
+
+
+.contenedor-principal #principal-izquierda input {
+    margin-top: 0.3rem;
+    text-align: end;
+    border: transparent;
+    background: var(--veryLIghtGrayishCyan);
+    padding: 0.5rem 0.4rem;
+    cursor: pointer;
+}
+
+
+.contenedor-principal #principal-izquierda input:focus {
+    border: 1px solid var(--StrongCyan);
+}
+
+
+
+
+/* Estilos de la Parte izquierda */
+
+/*------------- (parte del bill) ----------------*/
+
+#bill, #number-people {
+    display: flex;
+    position: relative;
+}
+
+#bill input, #number-people input {
+    flex: 1;
+    color: var(--veryDarkCyan);
+}
+
+#bill img, 
+#number-people img  {
+    width: 15px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 15px;
+    left: 1rem;
+}
+
+/*------------- parte de los botones----------------*/
+
+#principal-left-botones .porcentajes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+#principal-left-botones {
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    background-color: var(--veryDarkCyan);
+    color: var(--White);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: var(--StrongCyan);
+    color: var(--veryDarkCyan);
+}
+
+.button.active {
+    background-color: var(--StrongCyan);
+    color: var(--veryDarkCyan);
+}
+
+
+#principal-left-botones,
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+#principal-izquierda #principal-left-botones {
+    font-size: 13px;
+}
+
+#principal-left-botones #people-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/* Estilos de la Parte Derecha */
+
+
+main #principal-derecha {
+    gap: 3rem;
+    padding: 2rem;
+    background-color: var(--veryDarkCyan);
+    border-radius: 10px;
+}
+
+main #principal-right-superior,
+main #principal-right-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-person {
+    font-size: 13px;
+    color: var(--White);
+}
+
+.person {
+    color: var(--White);
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.tip-total {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+    color: var(--StrongCyan);
+}
+
+#button-reset {
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* border inputs*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 3px;
+}
+
+/*Arreglos Reponsive*/
+
